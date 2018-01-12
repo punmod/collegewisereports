@@ -1,0 +1,24 @@
+<h3 align="center">Infrastructure Fund getting colleges of Chandigarh</h3>
+  <p></p>
+  <table class="table table-striped table-responsive">
+    <thead>
+                                    <tr>
+                                        <th>College</th>
+                                        <th>Click to see Report</th>
+                                    </tr>
+            </thead>
+    <tbody>
+ <tr  *ngFor="let getter of getters">
+         
+          
+        <td>{{getter.company}}</td>
+        <td> 
+           <!-- <a class="btn btn-info" routerLink="/show/{{employee._id}}">Detail</a>  -->
+            <a class="btn btn-success" routerLink="/show/{{getter.id}}">Action Plan</a>
+            <a class="btn btn-warning" routerLink="/ftsummary/{{getter.id}}">Fund Tracker Summary</a>
+            <a href={{getter.fundtrackerlink}} class="btn btn-info" role="button">Fund Tracker Form</a>
+         
+          </td>
+ </tr>
+    </tbody>
+  </table>
